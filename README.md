@@ -71,7 +71,7 @@ And use them in any page:
 When you want to preform an action without taking any input or displaying a page, define an action:
 
 ```
-server.AddAction("/example", func (w gemini.ResponseWriter, r *gemini.Request) {
+booster.AddAction("/example", func (w gemini.ResponseWriter, r *gemini.Request) {
 	log.printf("user hit example action")
 })
 ```
@@ -81,7 +81,7 @@ server.AddAction("/example", func (w gemini.ResponseWriter, r *gemini.Request) {
 When you need user input, define an input:
 
 ```
-server.AddInput("/exampleinput", "Prompt Text", func (w gemini.ResponseWriter, r *gemini.Request) {
+booster.AddInput("/exampleinput", "Prompt Text", func (w gemini.ResponseWriter, r *gemini.Request) {
 	UsersInput := titan.GetQuery(r)
 
    	log.printf("user entered: %v", UsersInput)
