@@ -3,7 +3,7 @@ A Booster Rocket for Gemini Apps.
 
 Leverage [a-h's Go Gemini library](https://github.com/a-h/gemini) and [Go Templates](https://golang.org/pkg/text/template/) to make simple interactive capsules.
 
-For a full example, check out Titandon, a gemini mastodon client.
+For a full example, check out [Titandon](https://github.com/mibzman/titandon), a gemini mastodon client.
 
 # Features
 - Pages
