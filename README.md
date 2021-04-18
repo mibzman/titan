@@ -57,7 +57,7 @@ And you're flying!
 Define components in the `/components` directory:
 ```
 {{define "Example"}}
-{{.Content}}
+  {{.Content}}
 {{end}}
 ```
 
@@ -84,7 +84,7 @@ When you need user input, define an input:
 server.AddInput("/exampleinput", "Prompt Text", func (w gemini.ResponseWriter, r *gemini.Request) {
 	UsersInput := titan.GetQuery(r)
 
-    log.printf("user entered: %v", UsersInput)
+   	log.printf("user entered: %v", UsersInput)
 
 	w.SetHeader(gemini.CodeRedirect, "/timeline")
 })
