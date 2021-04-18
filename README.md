@@ -57,7 +57,7 @@ And you're flying!
 Define components in the `/components` directory:
 ```
 {{define "Example"}}
-  {{.Content}}
+{{.Content}}
 {{end}}
 ```
 
